@@ -1,14 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                // This stage checks out your source code from version control
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
                 // This stage builds your project
@@ -34,19 +26,8 @@ pipeline {
         }
     }
     
-    post {
-        success {
-            // This block of code runs if the pipeline is successful
-            echo 'Pipeline succeeded!'
 
-            // You can add additional steps or notifications here
-        }
+        
 
-        failure {
-            // This block of code runs if the pipeline fails
-            echo 'Pipeline failed!'
-
-            // You can add additional steps or notifications here
-        }
-    }
+        
 }
