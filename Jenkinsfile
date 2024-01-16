@@ -13,8 +13,8 @@ pipeline {
         stage('Deploy') {
 
             steps {
-                sh 'cp -r * /var/www/main/reactapp'
-                sh 'cd /var/www/main/reactapp'
+                sh 'cp -r * /var/www/react.com/main'
+                sh 'cd /var/www/react.com/main/public'
                 
 
 
