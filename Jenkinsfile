@@ -19,7 +19,7 @@ pipeline {
 
 
                 sh 'nohup pm2 start &'
-                echo 'Running tests...'
+                echo 'Running tests....'
                 // Add test commands or scripts here
             }
         }
